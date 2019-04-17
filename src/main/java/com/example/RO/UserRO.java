@@ -40,4 +40,13 @@ public class UserRO {
     public void setId(Integer id) {
         this.id = id;
     }
+
+    @Override
+    public String toString() {
+        return "UserRO{" +
+                "name='" + name + '\'' +
+                ", adress='" + adress + '\'' +
+                ", id=" + id +
+                '}';
+    }
 }
