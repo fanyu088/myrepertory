@@ -22,6 +22,7 @@ public class Stream_test {
         objectObjectHashMap.forEach((Object a, Object b) -> System.out.println(a + "-->" + b));
 
         Stream stream = Stream.of();
+        System.out.println("__________________________----------------____________________________");
 
     }
 
