@@ -1,5 +1,6 @@
 package com.example.demo12Stream;
 
+import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
@@ -15,7 +16,9 @@ public class LocalTime_test {
         LocalDateTime dataTime = LocalDateTime.of(LocalDate.now(),LocalTime.now().plusSeconds(120));
         long l = System.currentTimeMillis();
 
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 
+        String format1 = simpleDateFormat.format(l);
 
         DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
 
@@ -24,6 +27,7 @@ public class LocalTime_test {
 
         System.out.println(dataTime);
         System.out.println(format);
+        System.out.println(format1);
 
 
     }
