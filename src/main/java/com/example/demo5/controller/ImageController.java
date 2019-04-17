@@ -13,6 +13,7 @@ import java.io.IOException;
 import java.util.List;
 
 @RestController
+@RequestMapping("/a")
 public class ImageController {
 
 
@@ -22,7 +23,7 @@ public class ImageController {
     @Value("${prefixPath}")
     private String prefixPath;
 
-    @RequestMapping("test")
+    @RequestMapping("/test")
     public String uploadImage(MultipartFile file) throws IOException {
 
         String url = prefixPath;

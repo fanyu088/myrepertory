@@ -12,8 +12,10 @@ public class testNull {
         @Override
         protected List initialValue() {
 
-            List list = new ArrayList<String>(Arrays.asList("1", "2", "3", "4", "5", "6", "7"));
+            String[] strings = {"2","4fd"};
+            List list = new ArrayList<>(Arrays.asList("1", "2", "3", "4", "5", "6", "7"));
 
+            ArrayList<String> strings1 = new ArrayList<>(Arrays.asList(strings));
             return list;
         }
     };

@@ -7,17 +7,11 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping("/test")
+@RequestMapping("/testJpa")
 public class testJpa {
-
-
 
     @RequestMapping("/findById/{start}/{size}")
     public String findById(@RequestParam("ids") List<Integer> ids,@RequestParam("page") int page,@RequestParam("size") int size){
-
-
-
-
 
         return null;
 
