@@ -18,7 +18,7 @@ public class Run_demo1 {
             properties = new Properties();
             ClassLoader loader = Thread.currentThread().getContextClassLoader();
             try {
-                properties.load(new InputStreamReader(loader.getResourceAsStream("name.properties"), StandardCharsets.UTF_8));
+                properties.load(new InputStreamReader(loader.getResourceAsStream("nickName.properties"), StandardCharsets.UTF_8));
                 return properties.getProperty("nickName");
             } catch (IOException e) {
                 e.printStackTrace();
@@ -42,13 +42,14 @@ public class Run_demo1 {
         ArrayList<Object> list = new ArrayList<>();
         Collections.shuffle(str);
         for (String s : str) {
-            if (s.equals("\"没啥名取了"))
+            if (s.length() <= 6)
                 list.add(s);
         }
 
 
         System.out.println(list);
         System.out.println(str.size());
+        System.out.println(Arrays.toString(luckName));
 
 
     }

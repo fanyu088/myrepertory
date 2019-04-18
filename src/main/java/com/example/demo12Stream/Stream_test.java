@@ -25,7 +25,10 @@ public class Stream_test {
         userROS.add(dd);
         userROS.add(ee);
 
-        method6(userROS);
+        OptionalInt max = userROS.stream().mapToInt(UserRO::getId).max();
+        System.out.println(max);
+
+
 
     }
 
@@ -110,13 +113,6 @@ public class Stream_test {
                 .map(UserRO::getName)
                 .collect(Collectors.toList());
 
-<<<<<<< HEAD
-        Stream stream = Stream.of();
-        System.out.println("__________________________----------------____________________________");
-=======
->>>>>>> dev
-
-        System.out.println(list);
     }
 
 }
