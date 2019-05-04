@@ -110,13 +110,10 @@ public class Stream_test {
                 .map(UserRO::getName)
                 .collect(Collectors.toList());
 
-<<<<<<< HEAD
+
         Stream stream = Stream.of();
         System.out.println("__________________________----------------____________________________");
-=======
->>>>>>> dev
 
-        System.out.println(list);
     }
 
 }
