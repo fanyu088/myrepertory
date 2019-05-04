@@ -29,6 +29,7 @@ public class Nanotime_test_test {
 
         System.out.println(e-s);
         System.out.println(e-s);
+        System.out.println(e-s);
     }
 
 
