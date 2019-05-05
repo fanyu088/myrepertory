@@ -25,7 +25,10 @@ public class Stream_test {
         userROS.add(dd);
         userROS.add(ee);
 
-        method6(userROS);
+        OptionalInt max = userROS.stream().mapToInt(UserRO::getId).max();
+        System.out.println(max);
+
+
 
     }
 
