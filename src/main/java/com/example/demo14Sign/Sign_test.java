@@ -11,6 +11,7 @@ public class Sign_test {
         String name = "a";
         String scope = "c";
         String age = "b";
+        String age1 = "b";
 
         method(name,scope,age);
 
