@@ -1,5 +1,7 @@
 package com.example.demo14Sign;
 
+import org.apache.commons.codec.cli.Digest;
+
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.Arrays;
@@ -14,6 +16,7 @@ public class Sign_test {
         String age1 = "b";
 
         method(name,scope,age);
+
 
     }
 

@@ -5,7 +5,7 @@ import com.sun.org.apache.bcel.internal.generic.IF_ACMPEQ;
 import java.util.ArrayList;
 import java.util.List;
 
-public class String_sub {
+public class getIssue_sub {
     public static void main(String[] args) {
 
         List<String> txNextFewIssue = getTXNextFewIssue("201904140470", 480, 100);

@@ -1,36 +1,27 @@
 package com.example.RO;
 
-import lombok.Data;
 
-
-public class UserRO {
+public class AgentRO {
     private String name;
     private String adress;
     private Integer id;
-    private boolean flag;
+    private Integer agentId;
 
-    public UserRO(String name, String adress, Integer id) {
+    public AgentRO(String name, String adress, Integer id) {
         this.name = name;
         this.adress = adress;
         this.id = id;
     }
 
-    public UserRO(String name, String adress, Integer id, boolean flag) {
-        this.name = name;
-        this.adress = adress;
-        this.id = id;
-        this.flag = flag;
+    public Integer getAgentId() {
+        return agentId;
     }
 
-    public UserRO() {
+    public void setAgentId(Integer agentId) {
+        this.agentId = agentId;
     }
 
-    public boolean getFlag() {
-        return flag;
-    }
-
-    public void setFlag(boolean flag) {
-        this.flag = flag;
+    public AgentRO() {
     }
 
     public String getName() {
@@ -59,11 +50,11 @@ public class UserRO {
 
     @Override
     public String toString() {
-        return "UserRO{" +
+        return "AgentRO{" +
                 "name='" + name + '\'' +
                 ", adress='" + adress + '\'' +
                 ", id=" + id +
-                ", flag=" + flag +
+                ", agentId=" + agentId +
                 '}';
     }
 }
