@@ -22,6 +22,14 @@ public class Calc_test {
         System.out.println(result3);
         System.out.println(result4);
 
+        boolean b = ((0 & 0x00000002) == 0x00000002);
+        boolean c = ((226 & 0x00000002) == 0x00000002);
+        int a =0x00000002;
+        System.out.println(a);
+
+        System.out.println("=========");
+        System.out.println(b);
+        System.out.println(c);
 
     }
 }

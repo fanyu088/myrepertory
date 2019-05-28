@@ -8,7 +8,7 @@ public class SQL_sort {
     public static void main(String[] args) {
 
 
-        String str ="PC蛋蛋 一分快3 一分时时彩 三分PK10 五分PC蛋蛋 五分六合彩 五分时时彩 北京PK10 幸运28 江苏快3 竞彩足球 腾讯一分PK10 腾讯三分PK10 腾讯五分PK10 腾讯五分彩";
+        String str ="PC蛋蛋 一分快3 一分时时彩 三分PK10 五分PC蛋蛋 五分六合彩 五分时时彩 北京PK10 幸运28 江苏快3 竞彩足球 腾讯一分PK10 腾讯三分PK10 腾讯五分PK10 腾讯五分彩 计划";
 
         String[] s = str.split(" ");
         for (String s1 : s) {

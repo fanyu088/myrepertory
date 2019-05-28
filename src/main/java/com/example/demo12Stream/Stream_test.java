@@ -11,11 +11,11 @@ import java.util.stream.Stream;
 public class Stream_test {
     public static void main(String[] args) {
 
-        UserRO aa = new UserRO("张三", "南京", 23);
-        UserRO bb = new UserRO("李四", "天津", 55);
-        UserRO cc = new UserRO("王五", "上海", 17);
-        UserRO dd = new UserRO("马二", "无锡", 18);
-        UserRO ee = new UserRO("赵一", "无锡", 18);
+        UserRO aa = new UserRO("张三", "离线", 5);
+        UserRO bb = new UserRO("李四", "在线", 4);
+        UserRO cc = new UserRO("王五", "离线", 2);
+        UserRO dd = new UserRO(" ", "在线", 3);
+        UserRO ee = new UserRO("", "在线", 1);
 
         ArrayList<UserRO> userROS = new ArrayList<>();
 
@@ -25,11 +25,16 @@ public class Stream_test {
         userROS.add(dd);
         userROS.add(ee);
 
+        List<UserRO> collect = userROS.stream().sorted(Comparator.comparing(UserRO::getAdress).thenComparing(UserRO::getName)).collect(Collectors.toList());
+
+        System.out.println(collect);
+
+
+    }
+    // 求最大值
+    private static void method7(ArrayList<UserRO> userROS) {
         OptionalInt max = userROS.stream().mapToInt(UserRO::getId).max();
         System.out.println(max);
-
-
-
     }
 
     // 输出转换map，自身id，对象，重复键覆盖
