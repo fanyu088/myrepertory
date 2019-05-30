@@ -9,6 +9,6 @@ public class index {
 
     @RequestMapping("/")
     public String index(){
-        return "hello world";
+        return "hello world \n sf";
     }
 }

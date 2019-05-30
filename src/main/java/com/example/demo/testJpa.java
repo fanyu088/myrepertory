@@ -16,4 +16,11 @@ public class testJpa {
         return null;
 
     }
+    @RequestMapping("/testResult")
+    public String testResult(){
+
+        return "hello world </br> 你們傻乎乎的";
+
+    }
+
 }
