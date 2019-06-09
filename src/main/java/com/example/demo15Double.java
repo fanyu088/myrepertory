@@ -1,5 +1,8 @@
 package com.example;
 
+import java.math.BigDecimal;
+import java.math.RoundingMode;
+
 public class demo15Double {
     public static void main(String[] args) {
 
@@ -48,11 +51,25 @@ public class demo15Double {
 
         System.out.println("------------------");
 
+        double sum_double = 2.0000;
+
+        BigDecimal bigDecimal = new BigDecimal(sum_double);
+        String string = String.valueOf(sum_double);
+        System.out.println(string);
+        System.out.println(bigDecimal);
+        System.out.println(bigDecimal.toString());
+        System.out.println(""+bigDecimal);
 
 
+        System.out.println("**********************");
+        BigDecimal bg = BigDecimal.valueOf(2.0010000);
 
-
-
+        BigDecimal bigDecimal1 = bg.setScale(2, RoundingMode.UP);
+        double num = bigDecimal1.doubleValue();
+        if (Math.round(num) - num == 0) {
+            System.out.println(String.valueOf((long) num));
+        }
+        System.out.println(String.valueOf(num));
 
 
 

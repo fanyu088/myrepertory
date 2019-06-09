@@ -15,6 +15,11 @@ public class UserRO {
         this.id = id;
     }
 
+    public UserRO(String name, boolean flag) {
+        this.name = name;
+        this.flag = flag;
+    }
+
     public UserRO(String name, String adress, Integer id, boolean flag) {
         this.name = name;
         this.adress = adress;

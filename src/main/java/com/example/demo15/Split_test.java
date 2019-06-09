@@ -8,18 +8,22 @@ public class Split_test {
     public static void main(String[] args) {
 
 
+        method1();
+
+
+    }
+
+    private static void method1() {
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append("以下房间分享失败").append("\n");
-        stringBuilder.append("1以下房间分享失败").append("\n");
-        stringBuilder.append("2以下房间分享失败").append("\n");
+//        stringBuilder.append("1以下房间分享失败").append("\n");
+//        stringBuilder.append("2以下房间分享失败").append("\n");
 
 
         System.out.println(stringBuilder.toString().length());
         boolean empty = StringUtils.isEmpty(stringBuilder.toString().substring(9));
         System.out.println(empty);
         System.out.println(stringBuilder.toString());
-
-
     }
 
     private static void method() {
@@ -32,6 +36,7 @@ public class Split_test {
             System.out.println(s);
         }
         System.out.println(Arrays.toString(split));
+        System.out.println(split.length);
 
         System.out.println("---------------------");
         String[] split1 = str.split(",");
@@ -39,5 +44,6 @@ public class Split_test {
             System.out.println(s);
         }
         System.out.println(Arrays.toString(split1));
+        System.out.println(split1.length);
     }
 }
