@@ -1,5 +1,7 @@
 package com.example.demo13Calc;
 
+import java.time.LocalTime;
+
 public class Calc_test {
     public static void main(String[] args) {
 
@@ -30,6 +32,11 @@ public class Calc_test {
         System.out.println("=========");
         System.out.println(b);
         System.out.println(c);
+
+        System.out.println("-=-=-=-=-=-=-=-");
+        System.out.println(10/3);
+        System.out.println(10%3);
+        System.out.println(LocalTime.now());
 
     }
 }
