@@ -1,5 +1,7 @@
 package com.example.demo13Calc;
 
+import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
+
 import java.time.LocalTime;
 
 public class Calc_test {
@@ -37,6 +39,12 @@ public class Calc_test {
         System.out.println(10/3);
         System.out.println(10%3);
         System.out.println(LocalTime.now());
+
+        System.out.println("=-=-=-=-=-=-==============");
+        System.out.println(19342611.99-1771326.073-23190.173);
+        System.out.println(543.822+11742.84+143);
+
+        System.out.println(-47124.196);
 
     }
 }

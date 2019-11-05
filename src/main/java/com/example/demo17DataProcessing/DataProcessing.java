@@ -5,7 +5,9 @@ import com.example.RO.UserRO;
 import com.google.common.collect.Lists;
 import org.springframework.util.StringUtils;
 
+import javax.xml.crypto.Data;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.stream.Collectors;
@@ -20,6 +22,13 @@ public class DataProcessing {
             39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55);
 
     public static void main(String[] args) {
+        Date date = new Date(60 * 1000);
+
+        System.out.println(date);
+
+    }
+
+    private static void method2() {
         ArrayList<Integer> list = new ArrayList<>();
         for (int i = 0; i < 20; i++) {
 
@@ -35,7 +44,6 @@ public class DataProcessing {
         }
 
         System.out.println(list);
-
     }
 
     private static void method() {

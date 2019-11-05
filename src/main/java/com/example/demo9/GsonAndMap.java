@@ -1,5 +1,7 @@
 package com.example.demo9;
 
+import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONObject;
 import com.alibaba.fastjson.util.ParameterizedTypeImpl;
 import com.example.RO.UserRO;
 import com.example.RO.UserRO1;
@@ -26,7 +28,7 @@ public class GsonAndMap {
 
         String string = "[{\"name\":\"23\",\"flag\":true},{\"name\":\"23\",\"flag\":false}]";
 
-        Collection<UserRO1> o = gson1.fromJson(string, new TypeToken <Collection <UserRO1>>(){
+        Collection<UserRO1> o = gson1.fromJson(string, new TypeToken<Collection <UserRO1>>(){
         }.getType());
 
         Type type = new TypeToken<List<UserRO>>() {
@@ -42,12 +44,6 @@ public class GsonAndMap {
         System.out.println("++++++++++++++++++");
         System.out.println(o1.toString());
         System.out.println(o);
-
-
-
-
-
-
     }
 
    /* private static void method1() {
